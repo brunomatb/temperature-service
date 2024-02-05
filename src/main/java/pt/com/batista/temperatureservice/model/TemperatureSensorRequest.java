@@ -1,10 +1,8 @@
 package pt.com.batista.temperatureservice.model;
 
-import com.mongodb.lang.NonNull;
-
 import java.time.Instant;
 
-public class TemperatureRequest {
+public class TemperatureSensorRequest {
     private String id;
 
     private String uid;

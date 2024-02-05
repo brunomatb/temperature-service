@@ -1,8 +1,12 @@
-package pt.com.batista.temperatureservice.model;
+package pt.com.batista.temperatureservice.persistence.entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.Instant;
 
-public class TemperatureResponse {
+@Document(collection="TemperatureSensorData")
+public class TemperatureSensorData {
+    @Id
     private String id;
     private String uid;
     private double temperature;
